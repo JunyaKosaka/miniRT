@@ -10,5 +10,6 @@ int main(void)
 	miniRT.img.addr = mlx_get_data_addr(miniRT.img.img, &miniRT.img.bits_per_pixel, \
 			&miniRT.img.line_length, &miniRT.img.endian);
 	mlx_put_image_to_window(miniRT.mlx, miniRT.win, miniRT.img.img, 0, 0);
+    mlx_loop(miniRT.mlx);
     return (0);
 }
