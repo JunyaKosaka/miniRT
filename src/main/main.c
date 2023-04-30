@@ -1,5 +1,4 @@
-#include <mlx.h>
-#include <stdio.h>
+#include "../includes/miniRT.h"
 
 int main(void)
 {
