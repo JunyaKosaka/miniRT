@@ -6,7 +6,7 @@
 /*   By: jkosaka <jkosaka@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 15:14:49 by jkosaka           #+#    #+#             */
-/*   Updated: 2023/04/30 15:02:25 by jkosaka          ###   ########.fr       */
+/*   Updated: 2023/04/30 15:28:03 by jkosaka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,12 @@ typedef struct s_data {
 	int		line_length;
 	int		endian;
 }	t_data;
+
+/*  fdf information  */
+typedef struct s_miniRT {
+	t_data		img;
+	void		*mlx;
+	void		*win;
+}	t_miniRT;
 
 #endif  // MINIRT_H
