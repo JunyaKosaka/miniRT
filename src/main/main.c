@@ -71,9 +71,9 @@ int main(void)
     t_vector    vec1;
     t_vector    vec2;
 
-    vec1.x = 100;
-    vec1.y = 100;
-    vec1.z = 100;
+    vec1.x = 0;
+    vec1.y = 0;
+    vec1.z = 0;
     vec1.color = RED;
     vec2.x = 400;
     vec2.y = 400;
