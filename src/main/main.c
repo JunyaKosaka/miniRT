@@ -63,15 +63,29 @@ void	render_line(t_data *img, t_vector start, t_vector end)
 	}
 }
 
+
+
 int main(void)
 {
     t_miniRT    miniRT;
+    t_vector    vec1;
+    t_vector    vec2;
+
+    vec1.x = 100;
+    vec1.y = 100;
+    vec1.z = 100;
+    vec1.color = RED;
+    vec2.x = 400;
+    vec2.y = 400;
+    vec2.z = 400;
+    vec2.color = RED;
 
     miniRT.mlx = mlx_init();
     miniRT.win = mlx_new_window(miniRT.mlx, WIN_SIZE, WIN_SIZE, " miniRT ");
     miniRT.img.img = mlx_new_image(miniRT.mlx, WIN_SIZE, WIN_SIZE);
 	miniRT.img.addr = mlx_get_data_addr(miniRT.img.img, &miniRT.img.bits_per_pixel, \
 			&miniRT.img.line_length, &miniRT.img.endian);
+    render_line(miniRT.img, vec1, vec2);
 	mlx_put_image_to_window(miniRT.mlx, miniRT.win, miniRT.img.img, 0, 0);
     mlx_loop(miniRT.mlx);
     return (0);

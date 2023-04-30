@@ -6,7 +6,7 @@
 /*   By: jkosaka <jkosaka@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 15:14:49 by jkosaka           #+#    #+#             */
-/*   Updated: 2023/04/30 15:51:28 by jkosaka          ###   ########.fr       */
+/*   Updated: 2023/04/30 16:04:46 by jkosaka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ typedef struct s_vector
 	double	y;
 	double	z;
 	int		color;
-	int		origin_color;
 }	t_vector;
 
 /*  minilibx image data  */
