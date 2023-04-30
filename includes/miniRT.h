@@ -6,7 +6,7 @@
 /*   By: jkosaka <jkosaka@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 15:14:49 by jkosaka           #+#    #+#             */
-/*   Updated: 2023/04/30 15:47:50 by jkosaka          ###   ########.fr       */
+/*   Updated: 2023/04/30 15:51:28 by jkosaka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,9 @@ typedef struct s_miniRT {
 	void		*mlx;
 	void		*win;
 }	t_miniRT;
+
+int		min(int x, int y);
+double	abs_double(double x);
+double	max_abs_3(double x, double y, double z);
 
 #endif  // MINIRT_H
