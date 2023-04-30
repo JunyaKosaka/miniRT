@@ -85,7 +85,7 @@ int main(void)
     miniRT.img.img = mlx_new_image(miniRT.mlx, WIN_SIZE, WIN_SIZE);
 	miniRT.img.addr = mlx_get_data_addr(miniRT.img.img, &miniRT.img.bits_per_pixel, \
 			&miniRT.img.line_length, &miniRT.img.endian);
-    render_line(miniRT.img, vec1, vec2);
+    render_line(&miniRT.img, vec1, vec2);
 	mlx_put_image_to_window(miniRT.mlx, miniRT.win, miniRT.img.img, 0, 0);
     mlx_loop(miniRT.mlx);
     return (0);
