@@ -6,21 +6,25 @@
 /*   By: jkosaka <jkosaka@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 15:14:49 by jkosaka           #+#    #+#             */
-/*   Updated: 2023/04/30 15:28:03 by jkosaka          ###   ########.fr       */
+/*   Updated: 2023/04/30 15:41:44 by jkosaka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MINIRT_H
 # define MINIRT_H
 
-# include "../minilibx-linux/mlx.h"
 # include <stdio.h>
 # include <stdlib.h>
-# include <unistd.h>
 # include <stdbool.h>
+# include <string.h>
+# include <unistd.h>
 # include <limits.h>
-
+# include <math.h>
+# include <fcntl.h>
+# include <errno.h>
 # define WIN_SIZE 700
+# define WIN_MID 350
+# define DELTA_RATIO 0.6
 # define WHITE 0xEEDDDD
 # define RED 0xFF0000
 # define GREEN 0x00FF00
