@@ -6,7 +6,7 @@
 /*   By: jkosaka <jkosaka@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 15:14:49 by jkosaka           #+#    #+#             */
-/*   Updated: 2023/04/30 14:59:29 by jkosaka          ###   ########.fr       */
+/*   Updated: 2023/04/30 15:01:40 by jkosaka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 # define MINIRT_H
 
 # include "../minilibx-linux/mlx.h"
+# include <stdio.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdbool.h>
+# include <limits.h>
 
 # define WIN_SIZE 700
 # define WHITE 0xEEDDDD
