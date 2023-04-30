@@ -9,7 +9,7 @@ void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
 }
 
 /*  render dot on minilibx image. return true if can render  */
-static bool	render_dot(t_vector vec, t_data *img)
+bool	render_dot(t_vector vec, t_data *img)
 {
 	int	mlx_x;
 	int	mlx_y;
@@ -45,7 +45,7 @@ t_vector	get_internal_vector(t_vector start, t_vector end, double ratio)
 }
 
 /*  render line between two vectors  */
-static void	render_line(t_data *img, t_vector start, t_vector end)
+void	render_line(t_data *img, t_vector start, t_vector end)
 {
 	double		ratio;
 	double		diff;
