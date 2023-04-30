@@ -8,6 +8,8 @@ OBJROOT		:= obj
 OBJDIRS		:= $(patsubst $(SRCROOT)/%, $(OBJROOT)/%, $(SRCDIRS))
 OBJS		:= $(patsubst $(SRCROOT)/%, $(OBJROOT)/%, $(SRCS:.c=.o))
 
+LIBUTIL := ./utils/libutil.a
+
 DEPS		:= $(OBJS:.o=.d)
 
 INCDIRS		:= includes
