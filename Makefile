@@ -21,7 +21,7 @@ CFLAGS		:= -Wall -Wextra -Werror # -MMD -MP # -g -fsanitize=thread
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	make -C ../utils
+	make -C ./utils
 	make -C ./minilibx-linux
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBUTIL) $(MLX) -lXext -lX11 -lm
 
@@ -30,8 +30,8 @@ $(OBJROOT)/%.o: $(SRCROOT)/%.c $(INCLUD)
 	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 clean:
-	make clean -C ../utils
-	make clean -C ../minilibx-linux
+	make clean -C ./utils
+	make clean -C ./minilibx-linux
 	$(RM) -r $(OBJROOT)
 
 fclean: clean
